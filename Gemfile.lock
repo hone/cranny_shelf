@@ -2,12 +2,17 @@ GEM
   remote: http://rubygems.org/
   specs:
     activesupport (3.0.3)
+    addressable (2.2.2)
     builder (3.0.0)
     couchrest (1.0.1)
       json (>= 1.4.6)
       mime-types (>= 1.15)
       rest-client (>= 1.5.1)
     curb (0.7.8)
+    em-http-request (0.2.15)
+      addressable (>= 2.0.0)
+      eventmachine (>= 0.12.9)
+    eventmachine (0.12.10)
     fattr (2.2.0)
     feedzirra (0.0.24)
       activesupport (>= 2.3.8)
@@ -36,6 +41,7 @@ PLATFORMS
 
 DEPENDENCIES
   couchrest
+  em-http-request
   feedzirra
   i18n
   nokogiri (= 1.4.2)
